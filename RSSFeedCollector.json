@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "55aaa8a6-bd53-41ea-8912-c9dfa56a0f4d",
+		"name": "RSSFeedCollector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29343544"
+	},
+	"item": [
+		{
+			"name": "fetchAndStoreArticle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/articles/fetch"
+			},
+			"response": []
+		},
+		{
+			"name": "getArticles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/articles?keywords=Taylor,United States&endDate=2024-10-01&startDate=2024-10-01",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"articles"
+					],
+					"query": [
+						{
+							"key": "keywords",
+							"value": "Taylor,United States"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-10-01"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-10-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
