@@ -1,5 +1,5 @@
 export const PORT = 3000
-export const DATABASE='mongodb+srv://farhanisrak:ilike19942910@practice.scx6j.mongodb.net/'
+export const DATABASE='mongodb+srv://*username*:*password*@*database*.scx6j.mongodb.net/'
 
 export const WEB_CACHE=false
 export const MAX_JSON_SIZE="10MB"
